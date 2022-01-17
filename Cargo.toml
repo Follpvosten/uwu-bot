@@ -1,0 +1,13 @@
+[package]
+name = "uwu-bot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "signal"] }
+tbot = { git = "https://gitlab.com/SnejUgal/tbot.git", branch = "master" }
+owoify_rs = "0.2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
